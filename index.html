@@ -1,39 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- displays site properly based on user's device -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Epilogue:wght@100;500;700&family=Fraunces:opsz,wght@9..144,700&family=Great+Vibes&family=Josefin+Sans:wght@300;400;600&family=Kumbh+Sans:wght@400;700&family=Libre+Franklin:wght@300;600;700&family=Montserrat:wght@500;700&family=Open+Sans:ital,wght@1,300&family=Outfit:wght@400;700&family=Overpass:wght@400;700&family=Playfair+Display&family=Poppins:wght@400;500;600&family=Quicksand:wght@300&family=Raleway:wght@200&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="style.css" />
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./images/favicon-32x32.png"
+		/>
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+		<title>Frontend Mentor | Intro section with dropdown navigation</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-
-  Features
-  Company
-  Careers
-  About
-
-  Login
-  Register
-
-  Make remote work
-
-  Get your team in sync, no matter your location. Streamline processes, 
-  create team rituals, and watch productivity soar.
-
-  Learn more
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+		<!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+		<style>
+			.attribution {
+				font-size: 11px;
+				text-align: center;
+			}
+			.attribution a {
+				color: hsl(228, 45%, 44%);
+			}
+		</style>
+		<script
+			src="https://kit.fontawesome.com/fadebd397d.js"
+			crossorigin="anonymous"
+		></script>
+	</head>
+	<body>
+		<header>
+			<nav class="mainnav">
+				<div class="dropdownBackground">
+					<span class="arrow"></span>
+				</div>
+				<img src="images/logo.svg" alt="logo" />
+				<ul class="menu">
+					<li>
+						<a href="#"
+							>Features <i class="fa-solid fa-angle-down"></i
+						></a>
+						<ul class="dropdown features">
+							<li>
+								<span class="todoicon"></span>
+								<a href="#">Todo List</a>
+							</li>
+							<li>
+								<span class="calendaricon"></span>
+								<a href="#">Calendar</a>
+							</li>
+							<li>
+								<span class="remindersicon"></span>
+								<a href="#">Reminders</a>
+							</li>
+							<li>
+								<span class="planningicon"></span>
+								<a href="#">Planning</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="#"
+							>Company <i class="fa-solid fa-angle-down"></i
+						></a>
+						<ul class="dropdown company">
+							<li><a href="#">History</a></li>
+							<li><a href="#">Our Team</a></li>
+							<li><a href="#">Blog</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">Careers</a>
+					</li>
+					<li>
+						<a href="#">About</a>
+					</li>
+				</ul>
+				<ul class="loginform">
+					<li><a href="#">Login</a></li>
+					<li><a href="#">Register</a></li>
+				</ul>
+			</nav>
+		</header>
+		<main class="container">
+			<div class="leftcontent">
+				<h1>Make remote work</h1>
+				<p>
+					Get your team in sync, no matter your location. Streamline
+					processes, create team rituals, and watch productivity soar.
+				</p>
+				<a href="#">Learn more</a>
+				<div class="clients">
+					<img src="images/client-databiz.svg" alt="client-databiz" />
+					<img
+						src="images/client-audiophile.svg"
+						alt="client-audiophile"
+					/>
+					<img src="images/client-meet.svg" alt="client-meet" />
+					<img src="images/client-maker.svg" alt="client-maker" />
+				</div>
+			</div>
+			<aside class="rightside"></aside>
+		</main>
+		<footer>
+			<div class="attribution">
+				Challenge by
+				<a
+					href="https://www.frontendmentor.io?ref=challenge"
+					target="_blank"
+					>Frontend Mentor</a
+				>. Coded by <a href="#">Your Name Here</a>.
+			</div>
+		</footer>
+	</body>
 </html>
