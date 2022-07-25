@@ -45,6 +45,19 @@ nav .loginform {
 	list-style: none;
 	margin-right: 30px;
 }
+.loginform li:nth-child(1) {
+	padding-top: 12px;
+}
+.loginform li:nth-child(2) {
+	border: 2px solid hsl(0, 0%, 8%);
+	height: 25px;
+	margin-left: -10px;
+	padding-left: 32px;
+	padding-top: 10px;
+	padding-bottom: 28px;
+	border-radius: 10px;
+}
+
 .container {
 	width: 100%;
 	height: 80vh;
