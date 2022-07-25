@@ -46,8 +46,8 @@ nav .loginform {
 	margin-right: 30px;
 }
 .container {
-	width: 100vh;
-	height: 50vh;
+	width: 100%;
+	height: 80vh;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -64,23 +64,65 @@ nav .loginform {
 	will-change: opacity;
 	display: none;
 }
-.mobile {
-	display: none;
-}
+
 .leftcontent {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	justify-content: center;
-	width: 100vh;
-	height: 100vh;
+	justify-content: flex-start;
+	text-align: left;
+	width: 50vh;
+	height: 45vh;
+	flex: 2.5;
 }
-
-.leftcontent h1,
+.rightside {
+	flex: 1.5;
+	height: 75vh;
+	background-image: url(images/image-hero-desktop.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+.leftcontent h1 {
+	font-weight: 700;
+	font-size: 80px;
+	margin-left: 87px;
+}
 .leftcontent p {
+	color: hsl(0, 0%, 41%);
+	font-weight: 500;
+	font-size: 18px;
+	margin-top: 30px;
+	word-spacing: 3px;
+}
+.btn {
+	background-color: hsl(0, 0%, 8%);
+	color: hsl(0, 0%, 98%);
+	width: 120px;
+	height: 40px;
+	border-radius: 10px;
+	font-weight: 500;
+	font-size: 17px;
+	margin-top: 30px;
+	margin-right: 320px;
+	cursor: pointer;
+}
+.btn:active {
+	background-color: hsl(0, 0%, 98%);
+	color: hsl(0, 0%, 8%);
+	font-weight: 500;
+	font-size: 17px;
+}
+.clients {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	width: 80vh;
+	height: 10vh;
+	margin-left: 100px;
+}
+.clients img {
+	margin-top: 300px;
+	margin-right: 50px;
 }
 footer {
 	position: absolute;
