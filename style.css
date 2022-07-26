@@ -8,6 +8,7 @@ body {
 	display: flex;
 	flex-direction: column;
 	min-height: 100vh;
+	background-color: hsl(0, 0%, 98%);
 }
 nav {
 	display: flex;
@@ -44,18 +45,31 @@ nav .loginform {
 	text-decoration: none;
 	list-style: none;
 	margin-right: 30px;
+	cursor: pointer;
 }
 .loginform li:nth-child(1) {
 	padding-top: 12px;
 }
 .loginform li:nth-child(2) {
-	border: 2px solid hsl(0, 0%, 8%);
+	border: 2px solid hsl(0, 0%, 41%);
 	height: 25px;
 	margin-left: -10px;
 	padding-left: 32px;
 	padding-top: 10px;
 	padding-bottom: 28px;
 	border-radius: 10px;
+}
+.loginform li:nth-child(2):active {
+	border: 3px solid hsl(0, 0%, 8%);
+	height: 25px;
+	margin-left: -10px;
+	padding-left: 32px;
+	padding-top: 10px;
+	padding-bottom: 28px;
+	border-radius: 10px;
+}
+.loginform a:nth-child(1) {
+	color: hsl(0, 0%, 8%);
 }
 
 .container {
@@ -66,18 +80,65 @@ nav .loginform {
 	justify-content: center;
 }
 .dropdown {
-	opacity: 0;
 	position: absolute;
 	overflow: hidden;
-	padding: 20px;
 	top: -20px;
 	border-radius: 2px;
 	transition: all 0.5s;
 	transform: translateY(100px);
-	will-change: opacity;
 	display: none;
 }
-
+.seconddrop {
+	position: absolute;
+	overflow: hidden;
+	top: -20px;
+	border-radius: 2px;
+	transition: all 0.5s;
+	transform: translateY(100px);
+	display: none;
+}
+.seconddrop li {
+	list-style: none;
+	margin-top: 17px;
+	text-align: left;
+	margin-left: -11px;
+}
+.seconddrop.active {
+	display: block;
+}
+.seconddrop.company {
+	text-align: center;
+	background-color: hsl(0, 0%, 100%);
+	box-shadow: 8px 8px 46px -15px rgba(0, 0, 0, 1);
+	border-radius: 10px;
+	width: 107px;
+	height: 115px;
+}
+.seconddrop a {
+	margin-left: 30px;
+	padding-top: 2px;
+}
+.dropdown li {
+	list-style: none;
+	margin-top: 17px;
+	text-align: left;
+	margin-left: 20px;
+}
+.dropdown.active {
+	display: block;
+}
+.dropdown.features {
+	text-align: center;
+	background-color: hsl(0, 0%, 100%);
+	box-shadow: 8px 8px 46px -15px rgba(0, 0, 0, 1);
+	border-radius: 10px;
+	width: 150px;
+	height: 160px;
+}
+.dropdown a {
+	margin-left: 30px;
+	padding-top: 2px;
+}
 .leftcontent {
 	display: flex;
 	flex-direction: column;
@@ -136,6 +197,30 @@ nav .loginform {
 .clients img {
 	margin-top: 300px;
 	margin-right: 50px;
+}
+.todo {
+	display: flex;
+	align-items: center;
+	background-image: url(images/icon-todo.svg);
+	background-repeat: no-repeat;
+}
+.calendaricon {
+	display: flex;
+	align-items: center;
+	background-image: url(images/icon-calendar.svg);
+	background-repeat: no-repeat;
+}
+.remindersicon {
+	display: flex;
+	align-items: center;
+	background-image: url(images/icon-reminders.svg);
+	background-repeat: no-repeat;
+}
+.planningicon {
+	display: flex;
+	align-items: center;
+	background-image: url(images/icon-planning.svg);
+	background-repeat: no-repeat;
 }
 footer {
 	position: absolute;
