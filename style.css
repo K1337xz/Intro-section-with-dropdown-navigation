@@ -36,6 +36,8 @@ nav .menu {
 	font-size: 10px;
 }
 nav .loginform {
+	position: absolute;
+	right: 0;
 	display: flex;
 	margin-top: -4px;
 }
@@ -52,10 +54,10 @@ nav .loginform {
 }
 .loginform li:nth-child(2) {
 	border: 2px solid hsl(0, 0%, 41%);
-	height: 25px;
-	margin-left: -10px;
-	padding-left: 32px;
-	padding-top: 10px;
+	height: 5px;
+	margin-left: -42px;
+	padding-left: -10px;
+	padding-top: 7px;
 	padding-bottom: 28px;
 	border-radius: 10px;
 }
@@ -226,18 +228,47 @@ footer {
 	position: absolute;
 	bottom: 0;
 }
+.closeham {
+	display: none;
+}
 .hamburger {
 	display: none;
 }
 @media screen and (max-width: 700px) {
+	nav .menu {
+		display: flex;
+		position: absolute;
+		list-style: none;
+		margin-right: auto;
+		align-content: center;
+		justify-content: center;
+		margin-top: 30rem;
+		flex-direction: column;
+		width: 30vh;
+		min-height: 100vh;
+		right: -999px;
+		background-color: white;
+	}
 	.hamburger {
 		display: flex;
-		margin-right: 15px;
+		margin-left: 150px;
 	}
-	nav .menu {
-		display: none;
+	nav {
+		overflow: hidden;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		position: relative;
+		height: 100px;
+		margin-left: 40px;
 	}
-	nav .loginform {
+	.closeham {
+		display: block;
+		z-index: 1;
+		margin-right: 30px;
+	}
+	.close {
+		width: 30px;
 		display: none;
 	}
 	.rightside {
@@ -272,13 +303,13 @@ footer {
 		align-items: center;
 		justify-content: flex-start;
 		text-align: left;
-		width: 50vh;
+		width: 39vh;
 		height: 35vh;
 		flex: 1;
 	}
 	.leftcontent h1 {
 		font-weight: 700;
-		font-size: 35px;
+		font-size: 25px;
 		padding-right: 1px;
 		margin-left: -5px;
 		margin-top: 22px;
@@ -316,8 +347,50 @@ footer {
 		width: 13vh;
 		height: 10vh;
 		margin-left: 22px;
+		margin-top: -30px;
 	}
 	footer {
 		display: none;
+	}
+	nav .loginform {
+		display: none;
+	}
+	.menu li,
+	.menu a {
+		margin-left: 21px;
+		margin-right: 20px;
+		text-decoration: none;
+		color: rgb(105, 105, 105);
+	}
+	.mob {
+		margin-top: 50px;
+	}
+	.dropdown {
+		top: -100px;
+		display: none;
+		position: relative;
+	}
+	.dropdown.features {
+		text-align: center;
+		background-color: hsl(0, 0%, 100%);
+		box-shadow: none;
+		margin-left: 30px;
+		border-radius: 10px;
+		width: 170px;
+		height: 160px;
+	}
+	.seconddrop {
+		top: -100px;
+		display: none;
+		position: relative;
+	}
+	.seconddrop.company {
+		text-align: center;
+		background-color: hsl(0, 0%, 100%);
+		box-shadow: none;
+		border-radius: 10px;
+		margin-left: 30px;
+		width: 170px;
+		height: 115px;
 	}
 }

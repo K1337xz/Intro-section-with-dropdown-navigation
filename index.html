@@ -37,15 +37,24 @@
 	</head>
 	<body>
 		<header>
-			<nav class="mainnav hamburger">
+			<nav class="mainnav">
 				<img src="images/logo.svg" alt="logo" />
-				<img
-					src="images/icon-menu.svg"
-					alt="hamburgericon"
-					class="hamburger"
-				/>
+				<div class="ham">
+					<img
+						src="images/icon-menu.svg"
+						alt="hamburgericon"
+						class="hamburger"
+					/>
+				</div>
+				<div class="closeham">
+					<img
+						src="images/icon-close-menu.svg"
+						alt="closemenu"
+						class="close"
+					/>
+				</div>
 				<ul class="menu">
-					<li class="drpmenu">
+					<li class="drpmenu mob">
 						<a href="#"
 							>Features <i class="fa-solid fa-angle-down"></i
 						></a>
@@ -64,7 +73,7 @@
 							</li>
 						</ul>
 					</li>
-					<li class="second">
+					<li class="second mob">
 						<a href="#"
 							>Company <i class="fa-solid fa-angle-down"></i
 						></a>
@@ -74,16 +83,16 @@
 							<li><a href="#">Blog</a></li>
 						</ul>
 					</li>
-					<li>
+					<li class="mob">
 						<a href="#">Careers</a>
 					</li>
-					<li>
+					<li class="mob">
 						<a href="#">About</a>
 					</li>
-				</ul>
-				<ul class="loginform">
-					<li><a href="#">Login</a></li>
-					<li><a href="#">Register</a></li>
+					<ul class="loginform">
+						<li><a href="#">Login</a></li>
+						<li><a href="#">Register</a></li>
+					</ul>
 				</ul>
 			</nav>
 		</header>
