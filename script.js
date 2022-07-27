@@ -33,6 +33,7 @@ function openMobile() {
 	nav.style.setProperty("overflow", "visible");
 	navMen.style.setProperty("right", "0");
 	closeMenu.style.setProperty("display", "block");
+	hamb.style.setProperty("display", "none");
 }
 
 //close menu function
@@ -40,6 +41,7 @@ function closeMobile() {
 	nav.style.setProperty("overflow", "hidden");
 	navMen.style.setProperty("right", "-999px");
 	closeMenu.style.setProperty("display", "none");
+	hamb.style.setProperty("display", "flex");
 }
 
 closeMenu.addEventListener("click", closeMobile);
