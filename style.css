@@ -353,7 +353,8 @@ footer {
 		display: none;
 	}
 	nav .loginform {
-		display: none;
+		display: flex;
+		flex-direction: column;
 	}
 	.menu li,
 	.menu a {
@@ -392,5 +393,35 @@ footer {
 		margin-left: 30px;
 		width: 170px;
 		height: 115px;
+	}
+	nav .loginform {
+		margin-top: 30rem;
+		display: flex;
+		flex-direction: column;
+		width: 214px;
+		height: 56px;
+	}
+	.loginform li:nth-child(1) {
+		display: flex;
+		justify-content: center;
+		margin-left: 38px;
+		margin-bottom: 30px;
+	}
+	.loginform li:nth-child(2) {
+		height: 14px;
+		margin-left: 50px;
+		width: 122px;
+		display: flex;
+		justify-content: center;
+	}
+	.login {
+		display: flex;
+		justify-content: center;
+		margin-top: 50px;
+	}
+	.register {
+		display: flex;
+		justify-content: center;
+		margin-top: 25px;
 	}
 }
