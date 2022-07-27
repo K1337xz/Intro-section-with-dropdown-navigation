@@ -422,6 +422,20 @@ footer {
 	.register {
 		display: flex;
 		justify-content: center;
+		align-items: center;
 		margin-top: 25px;
+		border-radius: 10px;
+		height: 40px;
+		border: 2px solid hsl(0, 0%, 41%);
+	}
+}
+
+@keyframes menu {
+	0% {
+		right: -999px;
+	}
+	50% {
+		right: 0;
+		opacity: 10px;
 	}
 }
