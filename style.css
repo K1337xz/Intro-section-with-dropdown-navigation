@@ -234,6 +234,12 @@ footer {
 .hamburger {
 	display: none;
 }
+.form {
+	position: absolute;
+	right: 0;
+	display: flex;
+	width: 300px;
+}
 @media screen and (max-width: 700px) {
 	nav .menu {
 		display: flex;
@@ -430,5 +436,10 @@ footer {
 		border-radius: 10px;
 		height: 40px;
 		border: 2px solid hsl(0, 0%, 41%);
+	}
+	.form {
+		position: static;
+		display: block;
+		width: auto;
 	}
 }
